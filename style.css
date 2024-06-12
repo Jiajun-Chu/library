@@ -5,6 +5,7 @@ body{
   justify-content: space-between;
   min-width: 1100px;
   padding: 0px 20px;
+  box-sizing: border-box;
 }
 
 header{
@@ -14,7 +15,6 @@ header{
   display: flex;
   justify-content: space-between;
   gap:10px;
-  padding-top: 10px;
 }
 
 header img{
@@ -38,7 +38,6 @@ header h3{
 footer{
   flex:0 0 50px;
   text-align: center;
-  padding-bottom: 10px;
 }
 
 main{
