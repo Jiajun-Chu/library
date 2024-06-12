@@ -1,0 +1,114 @@
+body{
+  margin: 0px;
+  padding: 10px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 1100px;
+}
+
+header{
+  flex:0 0 100px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+}
+
+header img{
+  height:60px;
+  width:60px;
+  border-radius: 50%;
+}
+
+#header-links{
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:20px;
+}
+
+header h3{
+  margin-right: auto;
+}
+
+footer{
+  flex:0 0 50px;
+  text-align: center;
+}
+
+main{
+  flex:1 1 auto;
+}
+
+.form-item,.form-buttons{
+  padding-top:20px;
+  justify-self: center;
+}
+
+.form-button{
+  text-align: center;
+}
+
+.form-button button{
+  all:unset;
+  padding:5px 10px;
+  font-size:18px;
+  border-radius: 10px;
+  border:1px black solid;
+  width:60px;
+}
+
+main form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding:20px 20%;
+  border-top: 1px gray dotted;
+  border-bottom: 1px gray dotted;
+  font-size:18px;
+}
+
+#shelf{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:20px 20% 0 20%;
+}
+
+#shelf-header{
+  flex:0 0 50px;
+  text-align: center;
+  font-size:26px;
+}
+
+.shelf-cards{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(200px,1fr));
+  gap:20px;
+  justify-content: space-between;
+}
+
+.shelf-card{
+  width:200px;
+  height: 250px;
+  border: 1px darkgray solid;
+  justify-self:  center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2px;
+}
+
+.shelf-card img{
+  width: 100px;
+}
+
+.shelf-card div{
+  font-size:16px;
+}
+

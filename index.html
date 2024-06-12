@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="cat1.png">
+    <h3>MeowLibrary</h3>
+    <div id="header-links">
+      <p>Log in</p>
+      <p>Sign up</p>
+      <p>Contact us</p>
+    </div>
+  </header>
+  <main>
+    <form id="form" method="post" action="">
+      <div class="form-item">
+        <label for="bookName">Name</label>
+        <input type="text" id="bookName" name="bookName" placeholder="Harry Potter">
+      </div>
+      <div class="form-item">
+        <label for="bookAuthor">Author</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" placeholder="J. K. Rowling">
+      </div>
+      <div class="form-item">
+        <label for="bookPages">Pages</label>
+        <input type="number" id="bookPages" name="bookPages" placeholder="599">
+      </div>
+      <div class="form-item">
+        <label for="isRead">Already Read</label>
+        <input type="radio" id="isRead" name="ifRead" value="Read">
+        <label for="NotRead">Not Yet</label>
+        <input type="radio" id="NotRead" name="ifRead" value="NotRead" checked="true">
+      </div>
+      <div class="form-item form-button">
+        <button type="reset">Reset</button>
+      </div>
+      <div class="form-item form-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <div id="shelf">
+      <div id="shelf-header">Your bookshelf</div>
+      <div class="shelf-cards">
+        <div class="shelf-card">
+          <img src="book.png">
+          <div class="shelf-card-name">Harry Potter</div>
+          <div class="shelf-card-author">J.K.Rowling</div>
+          <div class="shelf-card-pages">599</div>
+          <div class="shelf-card-ifread">Read</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright © Cheche 2024</p>
+  </footer>
+</body>
+</html>
