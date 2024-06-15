@@ -1,15 +1,27 @@
-const myLibrary = [];
+function myLibrary(){
+  const myBookList = [];
+  const addBookToLibrary = (book) => {
+    myBookList.push(book);
+  }
+  const getBookList = () => myBookList;
 
-function Book(name,author,page,read){
-  this.name = name;
-  this.author = author;
-  this.page = page;
-  this.read = read;
+  return {addBookToLibrary, getBookList};
 }
 
-function addBookToLibrary(book){
-  myLibrary.push(book);
+class Book{
+  constructor(name,author,page,read){
+    this.name = name;
+    this.author = author;
+    this.page = page;
+    this.read = read;
+  };
+
+  updateName = (value) =>{
+    this.name = value;
+  }
 }
+
+const library = myLibrary();
 
 const myForm = document.querySelector("#form");
 
@@ -55,5 +67,5 @@ function handleSubmit(event){
   cards.appendChild(cardDiv);
 
   const book = new Book(myDict['bookName'],myDict['bookAuthor'],myDict['bookPages'],myDict['ifRead']);
-  addBookToLibrary(book);
+  library.addBookToLibrary(book);
 }
